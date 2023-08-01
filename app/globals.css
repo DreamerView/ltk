@@ -54,9 +54,6 @@ header {
     background-color: #fff;
 }
 div.headerBlock {
-    height:60px;
-    display: flex;
-    align-items: center;
     margin: 0 auto;
     max-width: 1200px;
     width: calc(100% - 32px);
@@ -65,20 +62,67 @@ div.headerBlock {
     width:auto;
     height:48px;
 }
-nav {
-    margin-left:auto;
-    overflow-x: hidden;
+
+@media (min-width: 700px) {
+    button.burgerNav {
+        display: none;
+    } 
+    div.headerBlock {
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    nav {
+        margin-left:auto;
+        overflow-x: hidden;
+    }
+    nav > ul {
+        list-style: none;
+        display: flex;
+        gap:32px;
+    }
+    nav > ul > li {
+        color:var(--subText)
+    }
+    nav > ul > li:hover {
+        color:var(--brandColor)
+    }
 }
-nav > ul {
-    list-style: none;
-    display: flex;
-    gap:32px;
-}
-nav > ul > li {
-    color:var(--subText)
-}
-nav > ul > li:hover {
-    color:var(--brandColor)
+@media (max-width: 700px) {
+    button.burgerNav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        width:48px;
+        height:48px;
+        border-radius: 16px;
+        background-color: #1C1C1E;
+        color:var(--brandColor)
+    }
+    button.burgerNav > svg {
+        fill:#409CFF
+    }
+    div.headerBlock {
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+    nav {
+        display: none;
+        overflow-x: hidden;
+    }
+    nav > ul {
+        list-style: none;
+        /* display: flex; */
+        gap:32px;
+    }
+    nav > ul > li {
+        color:var(--subText)
+    }
+    nav > ul > li:hover {
+        color:var(--brandColor)
+    }
 }
 section.welcomePage {
     padding:80px 16px;
