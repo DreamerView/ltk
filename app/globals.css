@@ -145,13 +145,13 @@ div.welcomePageBlock {
     flex-direction: column;
     gap:24px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 700px) {
     div.welcomePageBlock > div > h1 {
         font-size: 60px;
         line-height: 72px;
     }
 }
-@media (max-width: 1250px) {
+@media (max-width: 700px) {
     div.welcomePageBlock > div > h1 {
         font-size: 48px;
         line-height: 56px;
@@ -311,6 +311,9 @@ div.listRowBlock {
     flex-direction: column;
     gap:32px;
 }
+/* div.listRowBlock > h1 {
+    text-align: center;
+} */
 div.listRowBlock > hr {
     display: block;
     height: 1px;
