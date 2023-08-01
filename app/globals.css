@@ -81,7 +81,7 @@ nav > ul > li:hover {
     color:var(--brandColor)
 }
 section.welcomePage {
-    padding:100px 16px;
+    padding:80px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
