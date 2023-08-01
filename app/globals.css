@@ -111,7 +111,7 @@ div.headerBlock {
     }
     .object {width:100%; }
     .main-object1 { width: 50%; height:80px;display: flex; align-items: center; }
-    .main-object2 { width: 50%; height: 80px;display: flex; align-items: center; }
+    .main-object2 { width: 50%; height:80px;display: flex; align-items: center; }
     nav {
         margin-top:16px;
         display: none;
