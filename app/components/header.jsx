@@ -1,6 +1,19 @@
+'use client'
+
 import Link from "next/link";
+import { useEffect } from "react";
 
 const HeaderModule = () => {
+    useEffect(()=>{
+        const elem = document.body;
+        const bar = document.querySelector('.bar');
+        const updateBar = () => {
+            let scrollPos = (window.scrollY/(elem.scrollHeight-window.innerHeight))*100;
+            bar.style.width = `${scrollPos}%`;
+            requestAnimationFrame(updateBar);
+        };
+        updateBar();
+    },[])
     return(
         <header>
             <div className="headerBlock">
@@ -16,6 +29,9 @@ const HeaderModule = () => {
                         <li><Link href="/about">Example 5</Link></li>
                     </ul>
                 </nav>
+            </div>
+            <div className="progress">
+                <span className="bar"></span>
             </div>
         </header>
     );
