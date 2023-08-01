@@ -104,24 +104,14 @@ div.headerBlock {
         fill:#fff
     }
     div.headerBlock {
-        padding:16px 0;
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        /* display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "main-object1 main-object2"
-            "object object"; */
         min-height: 80px;
-        /* flex-direction: column; */
     }
-    .object { grid-area: object; width:100%; }
-    .main-object1 { grid-area: main-object1; width: 50%; }
-    .main-object2 { grid-area: main-object2; width: 50%; }
+    .object {width:100%; }
+    .main-object1 { width: 50%; height:80px;display: flex; align-items: center; }
+    .main-object2 { width: 50%; height: 80px;display: flex; align-items: center; }
     nav {
         margin-top:16px;
         display: none;
