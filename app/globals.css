@@ -265,6 +265,11 @@ div.storyText {
     gap:8px;
     margin-bottom:32px;
 }
+div.storyText > img {
+    margin: 0 auto;
+    width:150px;
+    height: auto;
+}
 div.storyText > p {
     color:var(--subText)
 }
@@ -472,7 +477,7 @@ div.mockupBlock > img {
 /* Logo Scroller */
 .logoMarqueeSection {
     width: 100%;
-    padding:80px 0;
+    padding:120px 0;
     text-align: center;
   }
   .logoMarqueeSection > h1 {
@@ -488,7 +493,9 @@ div.mockupBlock > img {
   }
   #logoMarqueeSection {
     max-width: 1920px!important;
+    width:100%;
     margin: 0 auto;
+    overflow: hidden;
   }
   
   .default-content-container {
