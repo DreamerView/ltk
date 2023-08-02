@@ -462,7 +462,7 @@ div.mockUpConsole > p {
     font-size: 16px;
     margin: 0.7vw 0 0 0.7vw;
     white-space: nowrap;
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 0;
     opacity: 0;
     animation: type 4s steps(60, end) forwards;
