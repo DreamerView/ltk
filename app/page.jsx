@@ -15,7 +15,7 @@ const Page = () => {
             <section className="listRow">
                 <div className="listRowBlock">
                     <h1>My <strong>Services</strong></h1>
-                    <hr />
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <div className="listRowBlockRow">
                         <div className="listRowBlockContent">
                             <h2>UI/UX Design</h2>
