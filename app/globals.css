@@ -5,6 +5,7 @@
 :root {
     --brandColor:#007AFF;
     --brandFontColor:#007AFF;
+    --brandLightFontColor:#409CFF;
     --subText:hsla(240, 6%, 25%,.6);
 }
 .progress {
@@ -36,6 +37,9 @@ a,button {
 }
 b {
     color: var(--brandFontColor)
+}
+strong {
+    color:var(--brandLightFontColor)
 }
 body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
@@ -298,7 +302,7 @@ section.listRow {
     width:100%;
     min-height: 300px;
     background-color: #1C1C1E;
-    padding:100px 32px;
+    padding:64px 16px;
     box-sizing: border-box;
 }
 div.listRowBlock {
@@ -330,7 +334,11 @@ div.listRowBlockRow {
     gap:32px;
 }
 div.listRowBlockContent:hover {
-    background-color: var(--brandColor);
+    background-color: var(--brandLightFontColor);
+    cursor: pointer;
+}
+div.listRowBlockContent:hover div.listActionBlock {
+    background-color: var(--brandLightFontColor);
     cursor: pointer;
 }
 div.listRowBlockContent {
@@ -391,7 +399,28 @@ div.listBlock {
     justify-content: center;
 }
 div.listBlock > img {
-    width: 95%;
+    width: 97%;
     height: auto;
     border-radius: 16px;
+}
+div.listAction {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:120px;
+    height:120px;
+    background-color: #1C1C1E;
+    border-radius: 80% 0% 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+div.listAction > div.listActionBlock {
+    width:90px;
+    height: 90px;
+    background-color: #636366;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
