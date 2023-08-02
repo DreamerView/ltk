@@ -386,4 +386,12 @@ div.listBlock {
     height:250px;
     background-color: #F2F2F7;
     border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.listBlock > img {
+    width: 95%;
+    height: auto;
+    border-radius: 16px;
 }

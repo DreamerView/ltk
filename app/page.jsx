@@ -23,7 +23,9 @@ const Page = () => {
                             <div className="listBlockRow">
                                 <div className="listBlock2"></div>
                                 <div className="listBlock1"></div>
-                                <div className="listBlock"></div>
+                                <div className="listBlock">
+                                    <img src="/images/promo.jpg" alt="" />
+                                </div>
                             </div>
                         </div>
                         <div className="listRowBlockContent">
@@ -32,7 +34,9 @@ const Page = () => {
                             <div className="listBlockRow">
                                 <div className="listBlock2"></div>
                                 <div className="listBlock1"></div>
-                                <div className="listBlock"></div>
+                                <div className="listBlock">
+                                    <img src="/images/promo.jpg" alt="" />
+                                </div>
                             </div>
                         </div>
                         <div className="listRowBlockContent">
@@ -41,7 +45,9 @@ const Page = () => {
                             <div className="listBlockRow">
                                 <div className="listBlock2"></div>
                                 <div className="listBlock1"></div>
-                                <div className="listBlock"></div>
+                                <div className="listBlock">
+                                    <img src="/images/promo.jpg" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
