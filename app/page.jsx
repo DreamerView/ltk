@@ -4,6 +4,7 @@ import WelcomePage from "./components/welcomePage";
 import PromoLine from "./components/promoLine";
 import ExperienceStory from "./components/experience";
 import ListComponent from "./template/services";
+import PartnersList from "./components/partners";
 
 const Page = () => {
     const service = [
@@ -23,7 +24,7 @@ const Page = () => {
         <main>
             <WelcomePage />
             <PromoLine />
-            <ExperienceStory />
+            <PartnersList />
             <ListComponent items={service} />
             <section className="mockup">
                 <div className="mockupBlock">
@@ -33,6 +34,8 @@ const Page = () => {
                     <img src="/images/mockup.webp" alt="" />
                 </div>
             </section>
+            <ExperienceStory />
+            
         </main>
         </>
     )
