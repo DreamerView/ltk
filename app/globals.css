@@ -427,3 +427,117 @@ div.listAction > div.listActionBlock {
     align-items: center;
     justify-content: center;
 }
+section.mockup {
+    width:100%;
+    min-height: 300px;
+    background-color: #fafafa;
+    padding:100px 0;
+}
+div.mockupBlock {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+div.mockUpConsole {
+    position: absolute;
+    height: 300px;
+    background-color: #000;
+    top:0;
+    max-width: 770px;
+    width: 77%;
+    height:88%;
+    margin-top:8px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding:16px;
+    box-sizing: border-box;
+}
+div.mockUpConsole > p {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 16px;
+    margin: 0.7vw 0 0 0.7vw;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    width: 0;
+    opacity: 0;
+    animation: type 4s steps(60, end) forwards;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+ div.mockUpConsole > p:nth-child(2) {
+    animation-delay: 5s;
+  }
+div.mockUpConsole > p:nth-child(3) {
+    animation-delay: 10s;
+  }
+div.mockUpConsole > p:nth-child(4) {
+    animation-delay: 15s;
+  }
+div.mockUpConsole > p:nth-child(5) {
+    animation-delay: 20s;
+  }
+div.mockUpConsole > p:nth-child(6) {
+    animation-delay: 25s;
+  }
+div.mockUpConsole > p:nth-child(7) {
+    animation-delay: 30s;
+  }
+  div.mockUpConsole > p:nth-child(8) {
+    animation-delay: 35s;
+  }
+  div.mockUpConsole > p:nth-child(8) {
+    animation-delay: 40s;
+  }
+  div.mockUpConsole > p:nth-child(9) {
+    animation-delay: 45s;
+  }
+  div.mockUpConsole > p:nth-child(10) {
+    animation-delay: 50s;
+  }
+  div.mockUpConsole > p:nth-child(11) {
+    animation-delay: 55s;
+  }
+  div.mockUpConsole > p:nth-child(12) {
+    animation-delay: 60s;
+  }
+div.mockUpConsole > p:nth-child(7) span:first-child {
+    animation-duration: 0.8s;
+  }
+div.mockUpConsole > span {
+    animation: blink 1.8s infinite 8s;
+  }
+div.mockUpConsole > p a {
+    color: lime;
+    text-decoration: none;
+  }
+@keyframes type {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+}
+@keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+div.mockUpConsole >  ::selection {
+    background: black;
+  }
+div.mockupBlock > img {
+    max-width: 1000px;
+    width: 100%;
+    width: 100%;
+    height: auto;
+}
