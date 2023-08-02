@@ -28,18 +28,7 @@ const Page = () => {
             <section className="mockup">
                 <div className="mockupBlock">
                     <div className="mockUpConsole">
-                        <p>Light Technology [Version 1.0.0.0.1]</p>
-                        <p>(c) ТОО "Light Technology Kazakhstan". Все права защищены.</p>
-                        <p><strong>C:\Users\ltk:➤</strong><span> С чем мы работаем:</span></p>
-                        <p><strong>C:\Users\ltk:➤</strong> Программируемые логические контроллеры;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Преобразователи частоты низкого, среднего и высокого напряжения;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Сервопривода;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Устройства плавного пуска;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Панели оператора HMI;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Контрольно–измерительные приборы;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Серверы и другое сетевое оборудование;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Слаботочное и силовое коммутационное оборудование;</p>
-                        <p><strong>C:\Users\ltk:➤</strong> Системы возбуждения двигателей и генераторов;</p>
+                        <img src="/images/promo.jpg" alt="" />
                     </div>
                     <img src="/images/mockup.webp" alt="" />
                 </div>
