@@ -252,6 +252,12 @@ section.experienceStory {
 section.experienceStory > h1 {
     text-align: center;
 }
+section.experienceStory > p {
+    margin:32px auto 0;
+    text-align: center;
+    color:var(--subText);
+    max-width: 700px;
+}
 div.storyLineBlock {
     margin-top:64px;
 }
@@ -483,7 +489,7 @@ div.mockupBlock > img {
   .logoMarqueeSection > h1 {
     max-width: 700px;
     width:calc(100% - 32px);
-    margin:0 auto 16px;
+    margin:0 auto 32px;
   }
   .logoMarqueeSection > p {
     margin: 0 auto 64px;
