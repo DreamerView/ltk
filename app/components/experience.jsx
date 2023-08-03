@@ -1,7 +1,7 @@
 const experienceStory = () => {
     return(
         <section className="experienceStory">
-            <h1>Краткий референц-лист</h1>
+            <h1>Краткий <b>референц-лист</b></h1>
             <div className="storyLineBlock">
                 <div className="storyLine">
                     <div className="storyText">

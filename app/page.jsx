@@ -5,6 +5,7 @@ import PromoLine from "./components/promoLine";
 import ExperienceStory from "./components/experience";
 import ListComponent from "./template/services";
 import PartnersList from "./components/partners";
+import MockupBlock from "./components/mockup";
 
 const Page = () => {
     const service = [
@@ -26,16 +27,13 @@ const Page = () => {
             <PromoLine />
             <PartnersList />
             <ListComponent items={service} />
-            <section className="mockup">
-                <div className="mockupBlock">
-                    <div className="mockUpConsole">
-                        <img src="/images/promo.jpg" alt="" />
-                    </div>
-                    <img src="/images/mockup.webp" alt="" />
+            <MockupBlock /> 
+            <section className="cite">
+                <div className="citeBlock">
+                    <p>Главное из основополагающих составляющих нашей деятельности заключается в организации нижнего, грамотно организованного (полевого), уровня автоматизации технологических процессов, где основная задача заключается, в сборе данных необходимых для дальнейшей обработки, анализа и глобального управления всем процессом.</p>
                 </div>
             </section>
             <ExperienceStory />
-            
         </main>
         </>
     )
