@@ -166,6 +166,8 @@ div.welcomePageBlock {
         overflow: hidden;
         height: 72px;
         color: #fff;
+        background-color: var(--brandColor);
+        border-radius: 16px;
       }
       
       #change span {
@@ -173,8 +175,6 @@ div.welcomePageBlock {
         display: block;
         animation: changeWord 10s ease infinite 0s;
         -webkit-animation: changeWord 10s ease infinite 0s;
-        background-color: var(--brandColor);
-        border-radius: 16px;
         padding:0 16px;
         box-sizing: border-box;
       }
@@ -212,6 +212,8 @@ div.welcomePageBlock {
         overflow: hidden;
         height: 56px;
         color: #fff;
+        background-color: var(--brandColor);
+        border-radius: 16px;
       }
       
       #change span {
@@ -219,8 +221,6 @@ div.welcomePageBlock {
         display: block;
         animation: changeWord 10s ease infinite 0s;
         -webkit-animation: changeWord 10s ease infinite 0s;
-        background-color: var(--brandColor);
-        border-radius: 16px;
         padding:0 16px;
         box-sizing: border-box;
       }
