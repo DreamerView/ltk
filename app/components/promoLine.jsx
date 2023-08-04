@@ -5,17 +5,17 @@ const promoLine = () => {
                 <div className="promoBlock"></div>
                 <div className="promoBlock1">
                     <ul>
-                        <li>Discover</li>
+                        <li>Автоматизация</li>
                         <li>+</li>
-                        <li>Design</li>
+                        <li>Управление</li>
                         <li>+</li>
-                        <li>Develop</li>
+                        <li>Контроль</li>
                         <li>+</li>
-                        <li>Discover</li>
+                        <li>Автоматизация</li>
                         <li>+</li>
-                        <li>Design</li>
+                        <li>Управление</li>
                         <li>+</li>
-                        <li>Develop</li>
+                        <li>Контроль</li>
                         <li>+</li>
                     </ul>
                 </div>
