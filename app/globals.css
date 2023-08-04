@@ -444,6 +444,17 @@ section.mockup {
     background-color: #fafafa;
     padding:100px 0;
 }
+section.mockup > h1 {
+    text-align: center;
+    margin-bottom:32px;
+}
+section.mockup > p {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom:64px;
+    color:var(--subText)
+}
 div.mockupBlock {
     position: relative;
     max-width: 1200px;
