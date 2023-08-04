@@ -146,22 +146,102 @@ section.welcomePage {
     text-align: center;
 }
 div.welcomePageBlock {
-    max-width: 700px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     gap:24px;
 }
 @media (min-width: 700px) {
     div.welcomePageBlock > div > h1 {
-        font-size: 60px;
+        text-align: center;
+        display: flex;
+        gap:8px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
         line-height: 72px;
     }
+    #change {
+        overflow: hidden;
+        height: 72px;
+        color: #fff;
+      }
+      
+      #change span {
+        position: relative;
+        display: block;
+        animation: changeWord 10s ease infinite 0s;
+        -webkit-animation: changeWord 10s ease infinite 0s;
+        background-color: var(--brandColor);
+        border-radius: 16px;
+        padding:0 16px;
+        box-sizing: border-box;
+      }
+      @keyframes changeWord {
+        0% { top: 0; }
+        20% { top: 0; }
+        35% { top: -72px; }
+        55% { top: -72px; }
+        70% { top: -144px; }
+        80% { top: -144px; }
+        100% { top: -216px; }
+      }
+      @-webkit-keyframes changeWord {
+        0% { top: 0; }
+        20% { top: 0; }
+        35% { top: -72px; }
+        55% { top: -72px; }
+        70% { top: -144px; }
+        80% { top: -144px; }
+        100% { top: -216px; }
+      }
 }
 @media (max-width: 700px) {
     div.welcomePageBlock > div > h1 {
-        font-size: 48px;
+        text-align: center;
+        display: flex;
+        gap:8px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
         line-height: 56px;
     }
+    #change {
+        overflow: hidden;
+        height: 56px;
+        color: #fff;
+      }
+      
+      #change span {
+        position: relative;
+        display: block;
+        animation: changeWord 10s ease infinite 0s;
+        -webkit-animation: changeWord 10s ease infinite 0s;
+        background-color: var(--brandColor);
+        border-radius: 16px;
+        padding:0 16px;
+        box-sizing: border-box;
+      }
+      @keyframes changeWord {
+        0% { top: 0; }
+        20% { top: 0; }
+        35% { top: -56px; }
+        55% { top: -56px; }
+        70% { top: -112px; }
+        80% { top: -112px; }
+        100% { top: -168px; }
+      }
+      @-webkit-keyframes changeWord {
+        0% { top: 0; }
+        20% { top: 0; }
+        35% { top: -56px; }
+        55% { top: -56px; }
+        70% { top: -112px; }
+        80% { top: -112px; }
+        100% { top: -168px; }
+      }
 }
 div.welcomePageBlock > p {
     color:var(--subText);

@@ -3,7 +3,7 @@ const listComponent = () => {
         <section className="listRow">
                 <div className="listRowBlock">
                     <h1>Наши <strong>услуги</strong></h1>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Мы обеспечиваем качество, надежность и инновации в каждой услуге.</p>
                     <div className="listRowBlockRow">
                         <div className="listRowBlockContent">
                             <h2>Проектирование систем АСУТП</h2>
