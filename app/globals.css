@@ -552,3 +552,79 @@ div.citeBlock {
     display: block;
     font-weight: 500;
 }
+section.notes {
+    width:100%;
+    min-height: 300px;
+    background-color: #1C1C1E;
+}
+div.notesBlock {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: calc(100% - 32px);
+    padding:80px 0;
+}
+div.notesBlock > h1 {
+    text-align: center;
+    color:#fff;
+    margin-bottom: 32px;
+}
+div.notesBlock > p {
+    max-width: 700px;
+    text-align: center;
+    color:#D8D8DC;
+    margin:0 auto 64px;
+}
+div.notesBlock> ul,li{
+    list-style:none;
+  }
+div.notesBlock> ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.notesBlock >  ul li div{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:15em;
+    width:15em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+  }
+  
+  div.notesBlock > ul li:nth-child(even) div{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  div.notesBlock > ul li:nth-child(3n) div{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  div.notesBlock > ul li:nth-child(5n) div{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  
+  div.notesBlock > ul li div:hover,ul li div:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  
+  div.notesBlock > ul li{
+    margin:2em;
+  }
+  div.notesBlock > ul li p{
+    margin-top:16px;
+    font-size: 15px;
+    line-height: 22px;
+  }
