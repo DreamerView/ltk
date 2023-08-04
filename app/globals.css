@@ -173,8 +173,8 @@ div.welcomePageBlock {
       #change span {
         position: relative;
         display: block;
-        animation: changeWord 10s ease infinite 0s;
-        -webkit-animation: changeWord 10s ease infinite 0s;
+        animation: changeWord 8s ease infinite 0s;
+        -webkit-animation: changeWord 8s ease infinite 0s;
         padding:0 16px;
         box-sizing: border-box;
       }
@@ -184,7 +184,7 @@ div.welcomePageBlock {
         35% { top: -72px; }
         55% { top: -72px; }
         70% { top: -144px; }
-        80% { top: -144px; }
+        100% { top: -144px; }
         100% { top: -216px; }
       }
       @-webkit-keyframes changeWord {
@@ -219,8 +219,8 @@ div.welcomePageBlock {
       #change span {
         position: relative;
         display: block;
-        animation: changeWord 10s ease infinite 0s;
-        -webkit-animation: changeWord 10s ease infinite 0s;
+        animation: changeWord 8s ease infinite 0s;
+        -webkit-animation: changeWord 8s ease infinite 0s;
         padding:0 16px;
         box-sizing: border-box;
       }
