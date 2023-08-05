@@ -3,8 +3,8 @@ const promoLine = () => {
         <section className="promoLine">
             <div className="promoLineBlock">
                 <div className="promoBlock"></div>
-                <div className="promoBlock1">
-                    <ul>
+                <div className="promoBlock1 container">
+                    <ul className="marqueeText">
                         <li>Автоматизация</li>
                         <li>+</li>
                         <li>Управление</li>
