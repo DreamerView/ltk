@@ -493,7 +493,7 @@ div.listBlock {
     justify-content: center;
 }
 div.listBlock > img {
-    width: 97%;
+    width: 60%;
     height: auto;
     border-radius: 16px;
 }
@@ -600,7 +600,7 @@ div.mockupBlock > img {
       transform: translateX(-50%);
     }
   }
-  .container {
+  .containerMarquee {
     height: 60px;
     max-width: 1920px;
     width: 100%;

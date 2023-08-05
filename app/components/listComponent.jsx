@@ -12,7 +12,7 @@ const listComponent = () => {
                                 <div className="listBlock2"></div>
                                 <div className="listBlock1"></div>
                                 <div className="listBlock">
-                                    <img src="/images/promo.jpg" alt="" />
+                                    <img src="/images/loho.svg" alt="" />
                                 </div>
                                 <div className="listAction">
                                     <div className="listActionBlock">

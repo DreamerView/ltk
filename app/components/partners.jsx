@@ -3,7 +3,7 @@ const partnersList = () => {
         <section className="logoMarqueeSection">
             <h1>Партнерская <b>сеть</b></h1>
             <p>Широко развитая Партнерская сеть и сотрудничество с ведущими мировыми вендорами в области промышленной автоматизации такими как:</p>
-            <div className="container">
+            <div className="containerMarquee">
             <div className="marquee logoMarquee">
                 <img src="/images/partners/siemens.svg" title=""/> 
                 <img src="/images/partners/honeywell.svg" title=""/> 
