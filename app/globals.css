@@ -592,16 +592,28 @@ div.mockupBlock > img {
     width:calc(100% - 32px);
     color:var(--subText);
   }
-  @keyframes scroll {
+  @-webkit-keyframes scroll {
     0% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
   }
   .containerMarquee {
-    height: 60px;
+    height: 48px;
     max-width: 1920px;
     width: 100%;
     position: relative;
@@ -612,19 +624,25 @@ div.mockupBlock > img {
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap:64px;
-    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+            animation: scroll 20s linear infinite;
   }
   .marqueeText {
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+            animation: scroll 20s linear infinite;
   }
   .logoMarquee > img {
-    height:60px;
+    height:48px;
   }
   
 section.cite {
