@@ -852,7 +852,7 @@ div.productTitle > p {
 div.productRow {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap:32px;
+    gap:64px;
 }
 div.productRowBlock {
     display: flex;
