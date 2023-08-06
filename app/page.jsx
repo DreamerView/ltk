@@ -8,6 +8,8 @@ import PartnersList from "./components/partners";
 import MockupBlock from "./components/mockup";
 import CiteBlock from "./components/citeBlock";
 import NotesBlock from "./components/notesBlock";
+import StepByStep from "./components/stepByStep";
+import ProductList from "./template/product";
 
 const Page = () => {
     const service = [
@@ -20,6 +22,17 @@ const Page = () => {
         {title:"Обучение технологического и обслуживающего персонала"},
         {title:"Сервисное обслуживание систем АСУТП"},
         {title:"Эксплуатационный инжиниринг АСУТП"}
+    ];
+    const product = [
+        {title:"Программируемые логические контроллеры",image:"/images/product/1.jpg"},
+        {title:"Преобразователи частоты низкого, среднего и высокого напряжения",image:"/images/logo.svg"},
+        {title:"Сервопривода",image:"/images/product/3.jpg"},
+        {title:"Устройства плавного пуска",image:"/images/product/4.jpg"},
+        {title:"Панели оператора HMI",image:"/images/product/5.jpg"},
+        {title:"Контрольно–измерительные приборы",image:"/images/product/6.jpg"},
+        {title:"Серверы и другое сетевое оборудование",image:"/images/product/7.jpg"},
+        {title:"Слаботочное и силовое коммутационное оборудование",image:"/images/logo.svg"},
+        {title:"Системы возбуждения двигателей и генераторов",image:"/images/product/9.jpg"}
     ]
     return(
         <>
@@ -33,46 +46,8 @@ const Page = () => {
             <CiteBlock />
             <ExperienceStory />
             <NotesBlock />
-            <section className="stepByStep">
-                <div className="stepTitle">
-                    <h1>Для чего нужна <b>автоматизация</b></h1>
-                    <p>Автоматизация облегчает управление производством, контролирует процессы, оптимизирует ресурсы и повышает безопасность.</p>
-                </div>
-                <div className="stepRow">
-                    <div className="stepBlock">
-                        <h2>1</h2>
-                        <p>Частичное или полное исключение человеческого фактора из производственных процессов.</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>2</h2>
-                        <p>Увеличение рациональности использования энергоресурсов.(экономия электроэнергии как правило составляет от 5% до 80%)</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>3</h2>
-                        <p>Уменьшение износа оборудования.</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>4</h2>
-                        <p>Раннее диагностирование неисправностей, отсутствие длительных простоев в связи с внезапным выходом из строя оборудования.</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>5</h2>
-                        <p>Увеличение производительности производства.</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>6</h2>
-                        <p>Уменьшение себестоимости продукции.</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>7</h2>
-                        <p>Возможность точно установить коренные причины выхода из строя оборудования путем изучения и анализа архива событий и производственных показателей с полным хронометражем.</p>
-                    </div>
-                    <div className="stepBlock">
-                        <h2>8</h2>
-                        <p>Уменьшение травматизма и несчастных случаев на производстве в связи с установкой приборов безопасности.</p>
-                    </div>
-                </div>
-            </section>
+            <StepByStep />
+            <ProductList item={product} />
         </main>
         </>
     )
