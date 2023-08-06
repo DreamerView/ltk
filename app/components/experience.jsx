@@ -1,6 +1,14 @@
+"use client"
+import { useState } from "react";
+
 const experienceStory = () => {
+    const [spoiler,setSpoiler] = useState('overflow');
+    const handleSpoiler = () => {
+        setSpoiler(spoiler === 'overflow'?"":"overflow");
+    };
     return(
-        <section className="experienceStory">
+        <>
+        <section className={`experienceStory ${spoiler}`}>
             <h1>Краткий <b>референц-лист</b></h1>
             <p>Ознакомьтесь с кратким референц-листом, чтобы получить быстрый и структурированный обзор по интересующей вас теме.</p>
             <div className="storyLineBlock">
@@ -96,6 +104,10 @@ const experienceStory = () => {
                 </div>
             </div>
         </section>
+        <div className="fade">
+                <button onClick={handleSpoiler}>{spoiler==='overflow'?"Показать полностью":"Скрыть"}</button>
+            </div>
+        </>
     );
 };
 

@@ -1,6 +1,14 @@
+"use client"
+import { useState } from "react";
+
 const listComponent = ({items}) => {
+    const [spoiler,setSpoiler] = useState('overflow');
+    const handleSpoiler = () => {
+        setSpoiler(spoiler === 'overflow'?"":"overflow");
+    };
     return(
-        <section className="listRow">
+        <>
+        <section className={`listRow ${spoiler}`}>
             <div className="listRowBlock">
                 <h1>Наши <strong>услуги</strong></h1>
                 <p>Мы обеспечиваем качество, надежность и инновации в каждой услуге.</p>
@@ -26,6 +34,10 @@ const listComponent = ({items}) => {
                 </div>
             </div>
         </section>
+        <div className="fade">
+            <button onClick={handleSpoiler}>{spoiler==='overflow'?"Показать полностью":"Скрыть"}</button>
+        </div>
+        </>
     )
 };
 

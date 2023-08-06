@@ -1,6 +1,15 @@
+"use client"
+import { useState } from "react";
+
+
 const ProductList = ({item}) => {
+    const [spoiler,setSpoiler] = useState('overflow');
+    const handleSpoiler = () => {
+        setSpoiler(spoiler === 'overflow'?"":"overflow");
+    };
     return(
-        <section className="product">
+        <>
+        <section className={`product ${spoiler}`}>
                 <div className="productTitle">
                     <h1>С чем мы <b>работаем</b></h1>
                     <p>Мы специализируемся на автоматизации технологических процессов, обеспечивая эффективность и безопасность вашего производства.</p>
@@ -25,6 +34,10 @@ const ProductList = ({item}) => {
 
                 </div>
             </section>
+            <div className="fade">
+                <button onClick={handleSpoiler}>{spoiler==='overflow'?"Показать полностью":"Скрыть"}</button>
+            </div>
+            </>
     )
 };
 export default ProductList;

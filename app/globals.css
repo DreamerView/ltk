@@ -877,7 +877,6 @@ div.productTextBlock {
 div.productRowBlock > h2 {
     font-size: 20px;
     line-height: 30px;
-    height: 60px;
 }
 div.productRowBlock > p {
     font-size: 14px;
@@ -922,4 +921,24 @@ div.productRowBlockActionBlock {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.overflow {
+    position: relative;
+    overflow:hidden;
+    height: 800px;
+}
+.fade {
+    background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 0%, rgba(100, 100, 100, 1) 95%);
+    height: 100px;
+    margin-top: -100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fade > button {
+    background-color: var(--brandColor);
+    padding:8px 16px;
+    border-radius: 16px;
+    color:#fff;
 }
