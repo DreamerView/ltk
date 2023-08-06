@@ -34,7 +34,10 @@ const Page = () => {
             <ExperienceStory />
             <NotesBlock />
             <section className="stepByStep">
-                <h1>Для чего нужна <b>автоматизация</b></h1>
+                <div className="stepTitle">
+                    <h1>Для чего нужна <b>автоматизация</b></h1>
+                    <p>Автоматизация облегчает управление производством, контролирует процессы, оптимизирует ресурсы и повышает безопасность.</p>
+                </div>
                 <div className="stepRow">
                     <div className="stepBlock">
                         <h2>1</h2>

@@ -771,8 +771,7 @@ div.notesBlock> ul{
   }
 section.stepByStep {
     margin: 0 auto;
-    max-width:1400px;
-    width: calc(1);
+    max-width:1200px;
     min-height: 200px;
     width: 100%;
     padding:100px 0;
@@ -781,27 +780,41 @@ section.stepByStep {
     flex-direction: column;
     gap:64px;
 }
-section.stepByStep > h1 {
-    text-align: center;
-}
-div.stepRow {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-content: center;
-}
-div.stepBlock {
-    min-height: 50px;
+div.stepTitle {
+    margin: 0 auto;
+    max-width: 700px;
+    width:calc(100% - 32px);
     display: flex;
     flex-direction: column;
     gap:32px;
-    /* border-right:1px solid var(--subText); */
+}
+div.stepTitle > h1 {
+    text-align: center;
+}
+div.stepTitle > p {
+    text-align: center;
+    color:var(--subText)
+}
+div.stepRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.stepBlock {
+    flex:350px 1 1;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:32px;
     background-color: #1c1c1e;
-    padding:32px 16px;
+    padding:32px;
     box-sizing: border-box;
-    border:1.5px dashed var(--subText)
+    border:1.25px dashed var(--subText)
 }
 div.stepBlock > h2 {
     width:60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -814,4 +827,5 @@ div.stepBlock > h2 {
 }
 div.stepBlock > p {
     color:#fff;
+    width: calc(100% - 92px);
 }
