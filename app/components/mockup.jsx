@@ -7,7 +7,7 @@ const mockupBlock = () => {
                     <div className="mockUpConsole">
                         <img src="/images/interface.webp" alt="" />
                     </div>
-                    <img src="/images/mockUp.webp" alt="" />
+                    <img src="/images/mockup_model.webp" alt="" />
             </div>
         </section>
     );
