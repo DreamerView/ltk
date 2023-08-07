@@ -16,7 +16,7 @@ const ProductList = ({item}) => {
                 </div>
                 <div className="productRow">
                     {item.map((e,index)=>
-                        <div className="productRowBlock">
+                        <div key={index} className="productRowBlock">
                             <div className="productRowBlockImg">
                                 <img src={e.image} alt="" />
                                 <div className="productRowBlockAction">
@@ -25,7 +25,7 @@ const ProductList = ({item}) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="productTextBlock">{index+1} продукт</div>
+                            <div className="productTextBlock">Продукт</div>
                             <h2>{e.title}</h2>
                             <p>Light Technology Kazakhstan</p>
                         </div>

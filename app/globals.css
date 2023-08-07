@@ -138,12 +138,28 @@ div.headerBlock {
     }
 }
 section.welcomePage {
+    position: relative;
     padding:80px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+section.welcomePage:after {
+    content: "";
+    background-image: url(../public/images/grids.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center center; 
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
 }
 div.welcomePageBlock {
     max-width: 900px;
@@ -323,12 +339,29 @@ div.promoBlock1 > ul > li:nth-child(even) {
     font-weight: 500;
 }
 section.experienceStory {
+    position: relative;
     margin: 0 auto;
     max-width: 1400px;
     box-sizing: border-box;
     padding:100px 16px;
     width: 100%;
 }
+section.experienceStory:after {
+    content: "";
+    background-image: url(../public/images/grids.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center center; 
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+
 section.experienceStory > h1 {
     text-align: center;
 }
@@ -576,11 +609,27 @@ div.mockupBlock > img {
     height: auto;
 }
 /* Logo Scroller */
-.logoMarqueeSection {
+section.logoMarqueeSection {
+    position: relative;
     width: 100%;
     padding:120px 0;
     text-align: center;
   }
+  section.logoMarqueeSection:after {
+    content: "";
+    background-image: url(../public/images/grids.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center center; 
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
   .logoMarqueeSection > h1 {
     max-width: 700px;
     width:calc(100% - 32px);
@@ -940,5 +989,86 @@ div.productRowBlockActionBlock {
     background-color: var(--brandColor);
     padding:8px 16px;
     border-radius: 16px;
+    color:#fff;
+}
+footer {
+    width:100%;
+    min-height: 200px;
+    background-color: #1C1C1E;
+    padding:64px 0 0;
+}
+div.footerBlock {
+    margin: 0 auto;
+    max-width: 1280px;
+    width:calc(100% - 32px);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:32px 64px;
+}
+div.footerBlock > img {
+    
+    max-width: 200px;
+}
+div.footerBlockRow {
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+div.footerBlockRow > h2 {
+    color:#fff;
+}
+div.footerBlockContact {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+div.footerBlockContact > div {
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+div.footerContent > h2 {
+    font-size: 16px;
+    line-height: 36px;
+    color:#fff;
+    font-weight: 500;
+}
+div.footerContent > a {
+    font-size: 16px;
+    line-height: 36px;
+    color:#fff;
+    font-weight: 500;
+}
+div.footerContent > a:hover {
+    color:var(--brandLightFontColor)
+}
+div.footerContent > h3 {
+    font-size: 16px;
+    color:#fff;
+    font-weight: 500;
+}
+div.footerIcon {
+    background-color: var(--brandLightFontColor);
+    width:36px;
+    height:36px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.footerIcon > svg {
+    width: 24px;
+    height: 24px;
+}
+div.footerText {
+    margin-top:32px;
+    width:100%;
+    min-height: 60px;
+    background-color: #18181a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color:#fff;
 }
