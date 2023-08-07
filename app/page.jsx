@@ -50,7 +50,7 @@ const Page = () => {
             <ProductList item={product} />
             <footer>
                 <div className="footerBlock">
-                    <img src="/images/logo-light.svg" alt="" />
+                    <img src="/images/logo-night.svg" alt="" />
                     <div className="footerBlockRow">
                         <h2>All <strong>Links</strong></h2>
                         <div className="footerBlockContact">
