@@ -63,7 +63,40 @@ body:after {
     position: fixed;
     z-index: -1;
 }
-
+@media (orientation: portrait) and (max-width: 1000px) {
+    body:after {
+        content: "";
+        background-image: url(../public/images/grids.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center center; 
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+    }
+}
+@media (orientation: landscape) and (min-width: 1000px) {
+    body:after {
+        content: "";
+        background-image: url(../public/images/grids.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center center; 
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+    }
+}
 .sub {
     color:hsla(240, 6%, 25%,.6)
 }
