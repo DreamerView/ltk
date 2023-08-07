@@ -42,10 +42,26 @@ strong {
     color:var(--brandLightFontColor)
 }
 body {
+    position: relative;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
     overflow-x: hidden;
     font-size: 16px;
     line-height: 30px;
+}
+body:after {
+    content: "";
+    background-image: url(../public/images/grids.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center center; 
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
 }
 
 .sub {
@@ -138,28 +154,12 @@ div.headerBlock {
     }
 }
 section.welcomePage {
-    position: relative;
     padding:80px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-section.welcomePage:after {
-    content: "";
-    background-image: url(../public/images/grids.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-position: center center; 
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;  
 }
 div.welcomePageBlock {
     max-width: 900px;
@@ -339,29 +339,12 @@ div.promoBlock1 > ul > li:nth-child(even) {
     font-weight: 500;
 }
 section.experienceStory {
-    position: relative;
     margin: 0 auto;
     max-width: 1400px;
     box-sizing: border-box;
     padding:100px 16px;
     width: 100%;
 }
-section.experienceStory:after {
-    content: "";
-    background-image: url(../public/images/grids.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-position: center center; 
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;  
-}
-
 section.experienceStory > h1 {
     text-align: center;
 }
@@ -554,7 +537,6 @@ div.listAction > div.listActionBlock {
 section.mockup {
     width:100%;
     min-height: 300px;
-    background-color: #fafafa;
     padding:100px 0;
 }
 section.mockup > h1 {
@@ -609,27 +591,11 @@ div.mockupBlock > img {
     height: auto;
 }
 /* Logo Scroller */
-section.logoMarqueeSection {
-    position: relative;
+.logoMarqueeSection {
     width: 100%;
     padding:120px 0;
     text-align: center;
   }
-  section.logoMarqueeSection:after {
-    content: "";
-    background-image: url(../public/images/grids.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-position: center center; 
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;  
-}
   .logoMarqueeSection > h1 {
     max-width: 700px;
     width:calc(100% - 32px);
@@ -880,7 +846,7 @@ div.stepBlock > p {
 }
 section.product {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1800px;
     width: calc(100% - 32px);
     min-height: 100px;
     padding:100px 0;
