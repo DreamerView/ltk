@@ -1,6 +1,6 @@
 const StepByStep = () => {
     return(
-        <section className="stepByStep">
+        <section id="auto" className="stepByStep">
         <div className="stepTitle">
             <h1>Для чего нужна <b>автоматизация</b></h1>
             <p>Автоматизация облегчает управление производством, контролирует процессы, оптимизирует ресурсы и повышает безопасность.</p>

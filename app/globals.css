@@ -55,7 +55,7 @@ body:after {
     background-repeat: no-repeat;
     margin: 0 auto;
     background-position: center center; 
-    opacity: 0.1;
+    opacity: 0.05;
     top: 0;
     left: 0;
     bottom: 0;
@@ -187,13 +187,28 @@ div.headerBlock {
     }
 }
 section.welcomePage {
-    padding:80px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
+@media  (min-width:1200px) and (orientation:landscape) {
+    section.welcomePage {
+        aspect-ratio: 16/6.5;
+    }
+}
+@media  (min-width:1px) and (max-width:1199px) and (orientation:landscape) {
+    section.welcomePage {
+        padding:80px 16px;
+    }
+}
+@media  (min-width:1px) and (orientation:portrait) {
+    section.welcomePage {
+        padding:80px 16px;
+    }
+}
+
 div.welcomePageBlock {
     max-width: 900px;
     display: flex;
@@ -373,7 +388,7 @@ div.promoBlock1 > ul > li:nth-child(even) {
 }
 section.experienceStory {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1600px;
     box-sizing: border-box;
     padding:100px 16px;
     width: 100%;
@@ -449,7 +464,7 @@ section.listRow {
 }
 div.listRowBlock {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width:1700px;
     width: 100%;
     height: auto;
     color:#fff;
@@ -471,7 +486,6 @@ div.listRowBlockRow {
     margin-top:32px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap:32px;
 }
 div.listRowBlockContent:hover {
@@ -819,7 +833,7 @@ div.notesBlock> ul{
   }
 section.stepByStep {
     margin: 0 auto;
-    max-width:1200px;
+    max-width:1600px;
     min-height: 200px;
     width: 100%;
     padding:100px 0 0;
@@ -999,16 +1013,28 @@ footer {
 div.footerBlock {
     margin: 0 auto;
     max-width: 1280px;
-    width:calc(100% - 32px);
+    width:100%;
     min-height: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap:32px 64px;
+    gap:64px;
+    padding: 0 32px;
+    box-sizing: border-box;
 }
-div.footerBlock > img {
-    
-    max-width: 200px;
+div.footerLogo {
+    background-color: #fff;
+    height:auto;
+    max-width: 150px;
+    height:100px;
+    display: flex;
+    place-items: center;
+    padding:8px;
+    border-radius: 16px;
+}
+div.footerLogo > img {
+    width:100%;
+    height:auto;
 }
 div.footerBlockRow {
     display: flex;
@@ -1016,6 +1042,7 @@ div.footerBlockRow {
     gap:32px;
 }
 div.footerBlockRow > h2 {
+    font-size: 22px;
     color:#fff;
 }
 div.footerBlockContact {
@@ -1037,7 +1064,7 @@ div.footerContent > h2 {
 div.footerContent > a {
     font-size: 16px;
     line-height: 36px;
-    color:#fff;
+    color:#D8D8DC;
     font-weight: 500;
 }
 div.footerContent > a:hover {
@@ -1062,6 +1089,9 @@ div.footerIcon > svg {
     height: 24px;
 }
 div.footerText {
+    text-align: center;
+    padding:16px;
+    box-sizing: border-box;
     margin-top:32px;
     width:100%;
     min-height: 60px;

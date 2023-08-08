@@ -8,7 +8,7 @@ const experienceStory = () => {
     };
     return(
         <>
-        <section className={`experienceStory ${spoiler}`}>
+        <section id="reference" className={`experienceStory ${spoiler}`}>
             <h1>Краткий <b>референц-лист</b></h1>
             <p>Ознакомьтесь с кратким референц-листом, чтобы получить быстрый и структурированный обзор по интересующей вас теме.</p>
             <div className="storyLineBlock">

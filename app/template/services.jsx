@@ -8,7 +8,7 @@ const listComponent = ({items}) => {
     };
     return(
         <>
-        <section className={`listRow ${spoiler}`}>
+        <section id="services" className={`listRow ${spoiler}`}>
             <div className="listRowBlock">
                 <h1>Наши <strong>услуги</strong></h1>
                 <p>Мы обеспечиваем качество, надежность и инновации в каждой услуге.</p>

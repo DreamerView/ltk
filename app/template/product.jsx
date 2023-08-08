@@ -9,7 +9,7 @@ const ProductList = ({item}) => {
     };
     return(
         <>
-        <section className={`product ${spoiler}`}>
+        <section id="work" className={`product ${spoiler}`}>
                 <div className="productTitle">
                     <h1>С чем мы <b>работаем</b></h1>
                     <p>Мы специализируемся на автоматизации технологических процессов, обеспечивая эффективность и безопасность вашего производства.</p>

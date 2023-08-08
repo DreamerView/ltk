@@ -1,6 +1,5 @@
 'use client'
 
-import Link from "next/link";
 import { useEffect,useRef,useState } from "react";
 
 const HeaderModule = () => {
@@ -40,11 +39,11 @@ const HeaderModule = () => {
                 </div>
                 <nav className="object" ref={ref}>
                     <ul>
-                        <li><Link href="/">Example 1</Link></li>
-                        <li><Link href="/">Example 2</Link></li>
-                        <li><Link href="/about">Example 3</Link></li>
-                        <li><Link href="/about">Example 4</Link></li>
-                        <li><Link href="/about">Example 5</Link></li>
+                        <li><a href="#partners">Партнеры</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#reference">Референц-лист</a></li>
+                        <li><a href="#auto">Автоматизация</a></li>
+                        <li><a href="#work">С чем мы работаем</a></li>
                     </ul>
                 </nav>
             </div>
