@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from "next/image";
 
 const listComponent = ({items}) => {
     const [spoiler,setSpoiler] = useState('overflow');
@@ -21,7 +22,7 @@ const listComponent = ({items}) => {
                                 <div className="listBlock2"></div>
                                 <div className="listBlock1"></div>
                                 <div className="listBlock">
-                                    <img src="/images/logo.svg" alt="" />
+                                    <Image src="/images/logo.svg" width="100" height="100" priority />
                                 </div>
                                 <div className="listAction">
                                     <div className="listActionBlock">

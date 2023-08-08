@@ -1,16 +1,17 @@
 import "./globals.css";
-import HeaderModule from "./components/header";
-import WelcomePage from "./components/welcomePage";
-import PromoLine from "./components/promoLine";
-import ExperienceStory from "./components/experience";
-import ListComponent from "./template/services";
-import PartnersList from "./components/partners";
-import MockupBlock from "./components/mockup";
-import CiteBlock from "./components/citeBlock";
-import NotesBlock from "./components/notesBlock";
-import StepByStep from "./components/stepByStep";
-import ProductList from "./template/product";
-import FooterBlock from "./components/footer";
+import dynamic from 'next/dynamic'
+const HeaderModule = dynamic(() => import("./components/header"));
+const WelcomePage = dynamic(() => import("./components/welcomePage"));
+const PromoLine = dynamic(() => import("./components/promoLine"));
+const ExperienceStory = dynamic(() => import("./components/experience"));
+const ListComponent = dynamic(() => import("./template/services"));
+const PartnersList = dynamic(() => import("./components/partners"));
+const MockupBlock = dynamic(() => import("./components/mockup"));
+const CiteBlock = dynamic(() => import("./components/citeBlock"));
+const NotesBlock = dynamic(() => import("./components/notesBlock"));
+const StepByStep = dynamic(() => import("./components/stepByStep"));
+const ProductList = dynamic(() => import("./template/product"));
+const FooterBlock = dynamic(() => import("./components/footer"));
 
 const Page = () => {
     const service = [

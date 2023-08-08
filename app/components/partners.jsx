@@ -1,3 +1,5 @@
+
+
 const partnersList = () => {
     return(
         <section id="partners" className="logoMarqueeSection">
