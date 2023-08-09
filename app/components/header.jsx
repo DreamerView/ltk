@@ -4,6 +4,7 @@ import { useEffect,useRef,useState } from "react";
 
 const HeaderModule = () => {
     const [burger,setBurger] = useState(false);
+    const [active,setActive] = useState(null);
     const ref = useRef();
     useEffect(()=>{
         const elem = document.body;
@@ -25,6 +26,16 @@ const HeaderModule = () => {
             setBurger(false);
         }
     };
+    const closeBurger = (e) => {
+        if (window.matchMedia("(max-width: 700px)").matches) {
+            ref.current.style.cssText="display:none;"
+            setBurger(false);
+        }
+        const action = e.target;
+        if(active!==null) active.classList.remove('active');
+        setActive(action);
+        action.classList.add('active');
+    };
     return(
         <header>
             <div className="headerBlock">
@@ -39,11 +50,11 @@ const HeaderModule = () => {
                 </div>
                 <nav className="object" ref={ref}>
                     <ul>
-                        <li><a href="#partners">Партнеры</a></li>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#reference">Референц-лист</a></li>
-                        <li><a href="#auto">Автоматизация</a></li>
-                        <li><a href="#work">С чем мы работаем</a></li>
+                        <li><a onClick={closeBurger} data="partners" href="#partners">Партнеры</a></li>
+                        <li><a onClick={closeBurger} data="services" href="#services">Услуги</a></li>
+                        <li><a onClick={closeBurger} data="reference" href="#reference">Референц-лист</a></li>
+                        <li><a onClick={closeBurger} data="auto" href="#auto">Автоматизация</a></li>
+                        <li><a onClick={closeBurger} data="work" href="#work">С чем мы работаем</a></li>
                     </ul>
                 </nav>
             </div>

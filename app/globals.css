@@ -150,6 +150,12 @@ div.headerBlock {
     nav > ul > li:hover {
         color:var(--brandColor)
     }
+    nav > ul > li:hover {
+        color:var(--brandColor)
+    }
+    nav > ul > li > a.active {
+        color:var(--brandColor)
+    }
 }
 @media (max-width: 700px) {
     button.burgerNav {
@@ -191,6 +197,9 @@ div.headerBlock {
         color:var(--subText)
     }
     nav > ul > li:hover {
+        color:var(--brandColor)
+    }
+    nav > ul > li > a.active {
         color:var(--brandColor)
     }
 }
@@ -395,6 +404,7 @@ div.promoBlock1 > ul > li:nth-child(even) {
     font-weight: 500;
 }
 section.experienceStory {
+    /* scroll-margin-top:60px; */
     margin: 0 auto;
     max-width: 1600px;
     box-sizing: border-box;
@@ -464,10 +474,11 @@ div.storyEnder {
     border-left:1.5px dashed var(--subText);
 }
 section.listRow {
+    scroll-margin-top:60px;
     width:100%;
-    min-height: 300px;
+    /* min-height: 300px; */
     background-color: #1C1C1E;
-    padding:80px 16px;
+    padding:100px 16px;
     box-sizing: border-box;
 }
 div.listRowBlock {
@@ -647,6 +658,7 @@ div.mockupBlock > img {
 }
 /* Logo Scroller */
 .logoMarqueeSection {
+    scroll-margin-top:60px;
     width: 100%;
     padding:120px 0;
     text-align: center;
@@ -840,6 +852,7 @@ div.notesBlock> ul{
     line-height: 22px;
   }
 section.stepByStep {
+    scroll-margin-top:60px;
     margin: 0 auto;
     max-width:1600px;
     min-height: 200px;
@@ -900,6 +913,7 @@ div.stepBlock > p {
     width: calc(100% - 92px);
 }
 section.product {
+    scroll-margin-top:100px;
     margin: 0 auto;
     max-width: 1800px;
     width: calc(100% - 32px);
@@ -993,8 +1007,9 @@ div.productRowBlockActionBlock {
     justify-content: center;
 }
 .overflow {
+    scroll-margin-top:60px;
     position: relative;
-    overflow:hidden;
+    overflow:clip;
     height: 800px;
 }
 .fade {
