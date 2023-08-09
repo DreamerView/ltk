@@ -114,7 +114,12 @@ header {
     position: sticky;
     top:0;
     z-index:999999;
-    background-color: #fff;
+}
+header.white {
+    background-color:#fff;
+}
+header.black {
+    background-color:#1C1C1E;
 }
 div.headerBlock {
     margin: 0 auto;
@@ -124,6 +129,9 @@ div.headerBlock {
 .logo > img {
     width:auto;
     height:3rem;
+    background-color: #fff;
+    border-radius: 4px;
+    padding:4px;
 }
 
 @media (min-width: 43.75rem) {
@@ -194,7 +202,7 @@ div.headerBlock {
         gap:1rem;
     }
     nav > ul > li {
-        color:var(--subText)
+        color:#D8D8DC;
     }
     nav > ul > li:hover {
         color:var(--brandColor)

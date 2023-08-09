@@ -5,6 +5,7 @@ import { useEffect,useRef,useState } from "react";
 const HeaderModule = () => {
     const [burger,setBurger] = useState(false);
     const [active,setActive] = useState(null);
+    const [background,setBackground] = useState('white');
     const ref = useRef();
     useEffect(()=>{
         const elem = document.body;
@@ -18,17 +19,20 @@ const HeaderModule = () => {
     },[]);
     const openBurger = () => {
         if(burger===false) {
-            ref.current.style.cssText="display:block;"
+            ref.current.style.cssText="display:block;";
+            setBackground('black');
             setBurger(true);
         } 
         else {
-            ref.current.style.cssText="display:none;"
+            ref.current.style.cssText="display:none;";
+            setBackground('white');
             setBurger(false);
         }
     };
     const closeBurger = (e) => {
         if (window.matchMedia("(max-width: 700px)").matches) {
             ref.current.style.cssText="display:none;"
+            setBackground('white');
             setBurger(false);
         }
         const action = e.target;
@@ -37,7 +41,7 @@ const HeaderModule = () => {
         action.classList.add('active');
     };
     return(
-        <header>
+        <header className={background}>
             <div className="headerBlock">
                 <a onClick={closeBurger} href="#" className="logo main-object1">
                     <img src="/images/logo.svg" alt="" />
