@@ -205,10 +205,10 @@ div.headerBlock {
         color:#D8D8DC;
     }
     nav > ul > li:hover {
-        color:var(--brandColor)
+        color:var(--brandLightFontColor)
     }
     nav > ul > li > a.active {
-        color:var(--brandColor)
+        color:var(--brandLightFontColor)
     }
 }
 section.welcomePage {
