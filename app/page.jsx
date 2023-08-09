@@ -1,6 +1,5 @@
 import "./globals.css";
 import dynamic from 'next/dynamic'
-const HeaderModule = dynamic(() => import("./components/header"));
 const WelcomePage = dynamic(() => import("./components/welcomePage"));
 const PromoLine = dynamic(() => import("./components/promoLine"));
 const ExperienceStory = dynamic(() => import("./components/experience"));
@@ -11,7 +10,6 @@ const CiteBlock = dynamic(() => import("./components/citeBlock"));
 const NotesBlock = dynamic(() => import("./components/notesBlock"));
 const StepByStep = dynamic(() => import("./components/stepByStep"));
 const ProductList = dynamic(() => import("./template/product"));
-const FooterBlock = dynamic(() => import("./components/footer"));
 
 const Page = () => {
     const service = [
@@ -37,8 +35,6 @@ const Page = () => {
         {"title":"Системы возбуждения двигателей и генераторов","image":"/images/product/9.jpg"}
     ]
     return(
-        <>
-        <HeaderModule />
         <main>
             <WelcomePage />
             <PromoLine />
@@ -50,9 +46,7 @@ const Page = () => {
             <NotesBlock />
             <StepByStep />
             <ProductList item={product} />
-            <FooterBlock />
         </main>
-        </>
     )
 };
 
