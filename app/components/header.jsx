@@ -21,11 +21,13 @@ const HeaderModule = () => {
         if(burger===false) {
             ref.current.style.cssText="display:block;";
             setBackground('black');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#1C1C1E');
             setBurger(true);
         } 
         else {
             ref.current.style.cssText="display:none;";
             setBackground('white');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#fff');
             setBurger(false);
         }
     };
@@ -34,6 +36,7 @@ const HeaderModule = () => {
             ref.current.style.cssText="display:none;"
             setBackground('white');
             setBurger(false);
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#fff');
         }
         const action = e.target;
         if(active!==null) active.classList.remove('active');
