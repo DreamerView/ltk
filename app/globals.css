@@ -58,7 +58,7 @@ body {
 }
 body:after {
     content: "";
-    background-image: url(../public/images/grids.jpg);
+    background-image: url(../public/images/grids.webp);
     background-size: 100vw;
     background-repeat: no-repeat;
     margin: 0 auto;
