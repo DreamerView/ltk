@@ -2,9 +2,9 @@ const FooterBlock = () => {
     return(
         <footer id="footer">
                 <div className="footerBlock">
-                    <div className="footerLogo">
+                    <a href="#" className="footerLogo">
                         <img src="/images/logo.svg" alt="" />
-                    </div>
+                    </a>
                     <div className="footerBlockRow">
                         <h2>Полезные <strong>ссылки</strong></h2>
                         <div className="footerBlockContact">

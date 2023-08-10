@@ -1055,7 +1055,8 @@ div.footerBlock {
     padding: 0 2rem;
     box-sizing: border-box;
 }
-div.footerLogo {
+.footerLogo {
+    display: block;
     background-color: #fff;
     height:auto;
     max-width: 9.375rem;
@@ -1065,7 +1066,7 @@ div.footerLogo {
     padding:0.5rem;
     border-radius: 1rem;
 }
-div.footerLogo > img {
+.footerLogo > img {
     width:100%;
     height:auto;
 }
