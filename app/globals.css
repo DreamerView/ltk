@@ -225,12 +225,14 @@ section.welcomePage {
 }
 @media  (min-width:0.0625rem) and (max-width:74.9375rem) and (orientation:landscape) {
     section.welcomePage {
-        padding:5rem 1rem;
+        padding:6.25rem 1rem;
+        box-sizing: border-box;
     }
 }
 @media  (min-width:0.0625rem) and (orientation:portrait) {
     section.welcomePage {
-        padding:5rem 1rem;
+        padding:6.25rem 1rem;
+        box-sizing: border-box;
     }
 }
 
@@ -310,7 +312,7 @@ div.welcomePageBlock {
         display: block;
         animation: changeWord 10s ease infinite 0s;
         -webkit-animation: changeWord 10s ease infinite 0s;
-        padding:0 1rem;
+        padding:0 0.5rem;
         box-sizing: border-box;
       }
       @keyframes changeWord {
