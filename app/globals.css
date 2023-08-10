@@ -231,7 +231,7 @@ section.welcomePage {
 }
 @media  (min-width:0.0625rem) and (orientation:portrait) {
     section.welcomePage {
-        padding:6.25rem 1rem;
+        padding:5rem 1rem;
         box-sizing: border-box;
     }
 }
