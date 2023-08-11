@@ -22,7 +22,7 @@ const listComponent = ({items}) => {
                                 <div className="listBlock2"></div>
                                 <div className="listBlock1"></div>
                                 <div className="listBlock">
-                                    <Image src="/images/logo.svg" width="100" height="100" priority />
+                                    <Image alt={e.title} title={e.title} quality={100} src={e.img} width={e.w} height={e.h} />
                                 </div>
                                 <div className="listAction">
                                     <div className="listActionBlock">
