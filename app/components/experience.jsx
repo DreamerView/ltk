@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from "next/image";
 
 const experienceStory = () => {
     const [spoiler,setSpoiler] = useState('overflow');
@@ -14,7 +15,7 @@ const experienceStory = () => {
             <div className="storyLineBlock">
                 <div className="storyLine">
                     <div className="storyText">
-                        <img src="/images/work/kazakhmys.svg" alt="" />
+                        <Image width="150" height="56" src="/images/work/kazakhmys.svg" alt="Корпорация «Казахмыс»" title="Корпорация «Казахмыс»" />
                     </div>
                     <div className="timeBlock">
                         <div className="circleStoryLine">
@@ -29,7 +30,7 @@ const experienceStory = () => {
                 </div>
                 <div className="storyLine">
                     <div className="storyText">
-                        <img src="/images/work/erg.svg" alt="" />
+                        <Image width="150" height="118" src="/images/work/erg.svg" alt="ЭС АО «ЕЭК»" title="ЭС АО «ЕЭК»" />
                     </div>
                     <div className="timeBlock">
                         <div className="circleStoryLine">
@@ -44,7 +45,7 @@ const experienceStory = () => {
                 </div>
                 <div className="storyLine">
                     <div className="storyText">
-                        <img src="/images/work/erg.svg" alt="" />
+                        <Image width="150" height="118" src="/images/work/erg.svg" alt="ЭС АО «ЕЭК»" title="ЭС АО «ЕЭК»" />
                     </div>
                     <div className="timeBlock">
                         <div className="circleStoryLine">
@@ -59,7 +60,7 @@ const experienceStory = () => {
                 </div>
                 <div className="storyLine">
                     <div className="storyText">
-                        <img src="/images/work/kazakhmys.svg" alt="" />
+                        <Image width="150" height="56" src="/images/work/kazakhmys.svg" alt="Корпорация «Казахмыс»" title="Корпорация «Казахмыс»" />
                     </div>
                     <div className="timeBlock">
                         <div className="circleStoryLine">
@@ -74,7 +75,7 @@ const experienceStory = () => {
                 </div>
                 <div className="storyLine">
                     <div className="storyText">
-                        <img src="/images/work/kazakhmys.svg" alt="" />
+                        <Image width="150" height="56" src="/images/work/kazakhmys.svg" alt="Корпорация «Казахмыс»" title="Корпорация «Казахмыс»" />
                     </div>
                     <div className="timeBlock">
                         <div className="circleStoryLine">
@@ -89,7 +90,7 @@ const experienceStory = () => {
                 </div>
                 <div className="storyLine">
                     <div className="storyText">
-                        <img src="/images/work/erg.svg" alt="" />
+                        <Image width="150" height="118" src="/images/work/erg.svg" alt="ЭС АО «ЕЭК»" title="ЭС АО «ЕЭК»" />
                     </div>
                     <div className="timeBlock">
                         <div className="circleStoryLine">

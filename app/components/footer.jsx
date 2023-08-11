@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 const FooterBlock = () => {
     return(
         <footer id="footer">
                 <div className="footerBlock">
                     <a href="#" className="footerLogo">
-                        <img src="/images/logo.svg" alt="" />
+                    <Image quality={100} src="/images/logo.svg" alt="Light Technology Kazakhstan Footer Logo" title="Light Technology Kazakhstan Footer Logo" width={256} height={150} />
                     </a>
                     <div className="footerBlockRow">
                         <h2>Полезные <strong>ссылки</strong></h2>

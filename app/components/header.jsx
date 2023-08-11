@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect,useRef,useState } from "react";
+import Image from "next/image";
 
 const HeaderModule = () => {
     const [burger,setBurger] = useState(false);
@@ -47,7 +48,7 @@ const HeaderModule = () => {
         <header className={background}>
             <div className="headerBlock">
                 <a onClick={closeBurger} href="#" className="logo main-object1">
-                    <img src="/images/logo.svg" alt="" />
+                    <Image quality={100} src="/images/logo.svg" alt="Light Technology Kazakhstan Header Logo" title="Light Technology Kazakhstan Header Logo" width={256} height={150} />
                 </a>
                 <div className="main-object2">
                 <button className="burgerNav" onClick={openBurger}>

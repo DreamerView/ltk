@@ -24,15 +24,15 @@ const Page = () => {
         {"title":"Эксплуатационный инжиниринг АСУТП"}
     ];
     const product = [
-        {"title":"Программируемые логические контроллеры","image":"/images/product/1.jpg"},
-        {"title":"Преобразователи частоты низкого, среднего и высокого напряжения","image":"/images/logo.svg"},
-        {"title":"Сервопривода","image":"/images/product/3.jpg"},
-        {"title":"Устройства плавного пуска","image":"/images/product/4.jpg"},
-        {"title":"Панели оператора HMI","image":"/images/product/5.jpg"},
-        {"title":"Контрольно–измерительные приборы","image":"/images/product/6.jpg"},
-        {"title":"Серверы и другое сетевое оборудование","image":"/images/product/7.jpg"},
-        {"title":"Слаботочное и силовое коммутационное оборудование","image":"/images/logo.svg"},
-        {"title":"Системы возбуждения двигателей и генераторов","image":"/images/product/9.jpg"}
+        {"title":"Программируемые логические контроллеры","image":"/images/product/1.webp"},
+        {"title":"Преобразователи частоты низкого, среднего и высокого напряжения","image":"/images/product/2.webp"},
+        {"title":"Сервопривода","image":"/images/product/3_1.webp"},
+        {"title":"Устройства плавного пуска","image":"/images/product/4.webp"},
+        {"title":"Панели оператора HMI","image":"/images/product/5.webp"},
+        {"title":"Контрольно–измерительные приборы","image":"/images/product/6.webp"},
+        {"title":"Серверы и другое сетевое оборудование","image":"/images/product/7.webp"},
+        {"title":"Слаботочное и силовое коммутационное оборудование","image":"/images/product/8.webp"},
+        {"title":"Системы возбуждения двигателей и генераторов","image":"/images/product/9.webp"}
     ]
     return(
         <main>

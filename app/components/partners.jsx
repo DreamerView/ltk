@@ -1,23 +1,28 @@
-
+import Image from "next/image";
 
 const partnersList = () => {
+    const listPartners = [
+        {name:`Siemens`,source:`/images/partners/siemens.svg`, w:"302",h:"48"},
+        {name:`Honeywell`,source:`/images/partners/honeywell.svg`,w:"271",h:"48"},
+        {name:`Weidmuller`,source:`/images/partners/weidmuller.svg`,w:"360",h:"48"},
+        {name:`Schneider Electric`,source:`/images/partners/schneider_electric.svg`,w:"159",h:"48"},
+        {name:`Emerson`,source:`/images/partners/emerson.svg`,w:"109",h:"48"},
+        {name:`Phoenix Contact`,source:`/images/partners/phoenix_contact.svg`,w:"170",h:"48"},
+        {name:`ABB`,source:`/images/partners/abb.svg`,w:"121",h:"48"},
+        {name:`General Electric`,source:`/images/partners/general_electric.svg`,w:"48",h:"48"},
+        {name:`Rockwell Automation`,source:`/images/partners/rockwell_automation.svg`,w:"181",h:"48"},
+        {name:`Rittal`,source:`/images/partners/rittal.svg`,w:"104",h:"48"},
+        {name:`Delta`,source:`/images/partners/delta.svg`,w:"157",h:"48"}
+    ]
     return(
         <section id="partners" className="logoMarqueeSection">
             <h1>Партнерская <b>сеть</b></h1>
             <p>Широко развитая Партнерская сеть и сотрудничество с ведущими мировыми вендорами в области промышленной автоматизации такими как:</p>
             <div className="containerMarquee">
             <div className="marquee logoMarquee">
-                <img src="/images/partners/siemens.svg" title=""/> 
-                <img src="/images/partners/honeywell.svg" title=""/> 
-                <img src="/images/partners/weidmuller.svg" title=""/> 
-                <img src="/images/partners/schneider_electric.svg" title=""/> 
-                <img src="/images/partners/emerson.svg" title=""/> 
-                <img src="/images/partners/phoenix_contact.svg" title=""/>
-                <img src="/images/partners/abb.svg" title=""/> 
-                <img src="/images/partners/general_electric.svg" title="" /> 
-                <img src="/images/partners/rockwell_automation.svg" title="" /> 
-                <img src="/images/partners/rittal.svg" title="" /> 
-                <img src="/images/partners/delta.svg" title="" />
+                {listPartners.map(list=>
+                    <Image quality={100} src={list.source} width={list.w} height={list.h} alt={list.name} title={list.name}/>
+                )}
             </div>
             </div>
 
