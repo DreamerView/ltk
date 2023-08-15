@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 const HeaderModule = dynamic(() => import("./components/header"));
 const FooterBlock = dynamic(() => import("./components/footer"));
 
-const title = `Light Technology Kazakhstan`;
+const title = `ТОО «Light Technology Kazakhstan»`;
 const description = `Light Technology Kazakhstan - ваш надежный партнер в сфере АСУТП. Мы специализируемся на автоматизации технологических процессов, обеспечивая эффективность и безопасность вашего производства.`;
 
 export const metadata = {
@@ -11,17 +11,29 @@ export const metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
+  category: 'technology',
+  alternates: {
+    canonical: 'https://ltkz.kz',
+    languages: {
+      'ru-RU': 'https://ltkz.kz'
+    },
+  },
   title: title,
   description: description,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#fff' },
     { media: '(prefers-color-scheme: dark)', color: '#fff' },
   ],
+  images:[{url:"/images/social.png",width: 1200,height: 630, alt:title}],
   openGraph: {
     title: title,
     description: description,
-    type: 'article',
+    type: 'website',
     publishedTime: new Date(),
+    authors: [title],
+    locale: 'ru_RU',
+    images:[{url:"/images/social.png",width: 1200,height: 630, alt:title}],
+    siteName: title,
     authors: [title],
   },
   robots: {
@@ -55,7 +67,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
  return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>

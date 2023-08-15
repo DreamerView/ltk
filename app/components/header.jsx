@@ -8,6 +8,13 @@ const HeaderModule = () => {
     const [active,setActive] = useState(null);
     const [background,setBackground] = useState('white');
     const ref = useRef();
+    const menuList = [
+        {title:"Партнеры",url:"partners"},
+        {title:"Услуги",url:"services"},
+        {title:"Референц-лист",url:"reference"},
+        {title:"Автоматизация",url:"auto"},
+        {title:"С чем мы работаем",url:"work"},
+    ];
     useEffect(()=>{
         const elem = document.body;
         const bar = document.querySelector('.bar');
@@ -47,7 +54,7 @@ const HeaderModule = () => {
     return(
         <header className={background}>
             <div className="headerBlock">
-                <a onClick={closeBurger} href="#" className="logo main-object1">
+                <a onClick={closeBurger} href="#" className="logo main-object1" title="Header Logo">
                     <Image quality={100} src="/images/logo.svg" alt="Light Technology Kazakhstan Header Logo" title="Light Technology Kazakhstan Header Logo" width={256} height={150} />
                 </a>
                 <div className="main-object2">
@@ -58,11 +65,7 @@ const HeaderModule = () => {
                 </div>
                 <nav className="object" ref={ref}>
                     <ul>
-                        <li><a onClick={closeBurger} data="partners" href="#partners">Партнеры</a></li>
-                        <li><a onClick={closeBurger} data="services" href="#services">Услуги</a></li>
-                        <li><a onClick={closeBurger} data="reference" href="#reference">Референц-лист</a></li>
-                        <li><a onClick={closeBurger} data="auto" href="#auto">Автоматизация</a></li>
-                        <li><a onClick={closeBurger} data="work" href="#work">С чем мы работаем</a></li>
+                        {menuList.map(menu=><li><a onClick={closeBurger} data={menu.url} href={`#${menu.url}`} title={menu.title}>{menu.title}</a></li>)}
                     </ul>
                 </nav>
             </div>
